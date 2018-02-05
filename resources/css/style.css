@@ -19,14 +19,13 @@ light grey #eee
     padding:0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding:5px;
 }
 
 html {
 
   background-color:#fff;
   color: #555;
-
+  padding: 10px 10px;
 
 }
 
@@ -56,12 +55,65 @@ body {
 
 */
 
+/* =================main nav =================*/
+
+nav{
+  background-color:rgba(255, 192, 203, 0.096);
+
+}
+.main-nav {
+
+  float:right;
+  list-style:none;
+  margin:25px;
+}
+
+
+.main-nav li {
+  margin-left:40px;
+  display:inline-block;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding:16px 0;
+  color:#fff;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size:100%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 1s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #6C006C;
+
+}
+
+
 header {
- /* background-image: linear-gradient( to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/courts-copy.jpg);*/
   background-size:cover;
-  background-position:top;
+  background-position:bottom;
   height: 100vh;
   position: relative;
+}
+
+.bg-video {
+
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ background-position:top;
+ z-index: -1;
+}
+.bg-video__content{
+
+ height:90%;
+ width:100%;
+ object-fit:cover;
 
 }
 
@@ -80,7 +132,6 @@ header {
 
   color:#fff;
   text-transform:uppercase;
-
   backface-visibility: hidden;
 
 }
@@ -91,9 +142,8 @@ header {
   font-weight: 400;
   text-align: center;
   letter-spacing:6px;
-
   animation-name: moveInLeft;
-  animation-duration:2s;
+  animation-duration:3s;
 
 }
 
@@ -103,12 +153,12 @@ header {
   font-weight: 400;
   text-align: center;
   letter-spacing:.5px;
-
   animation-name: moveInright;
-  animation-duration:2s;
+  animation-duration:3s;
 }
 
-
+.main-nav{
+}
 
 /*
 
@@ -121,9 +171,9 @@ header {
   background: none;
   border: 0;
   box-sizing: border-box;
-  margin: 15px 10px;
+  margin: 15px 15px;
   padding: 15px 20px;
-  box-shadow: inset 0 0 0 2px #6A287E;
+  box-shadow: inset 0 0 0 2px #6C006C;
   color: #fff;
   font-family: 'Lato';
   font-size:80%;
@@ -281,7 +331,7 @@ header {
 
 .btn-animated {
 
-  animation: moveInBottom 1s ease-out 1s;
+  animation: moveInBottom 1.2s ease-out 1.2s;
   animation-fill-mode:backwards;
 
 }
