@@ -120,12 +120,11 @@ h2:after {
 h4:after {
   display: block;
   height: 2px;
-  background-color: #6C006C;
+
   content: " ";
   width: 50px;
   margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom:5px;
+
 }
 
 
@@ -426,7 +425,7 @@ header {
 .feature-box{
   background-color:rgba(238, 238, 238, 0.357);
   padding:20px 10px;
-  margin-bottom:10px 10px;
+  margin-bottom:50px;
   text-align:center;
   border-radius: 3px;
   transition:transform .5s;
@@ -455,13 +454,117 @@ header {
 
 
 
+.skillbar {
+	position:relative;
+	margin-top: 10px;
+	width: 100%;
+	background: #eee;
+	height: 35px;
+	border-radius: 3px;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	margin: 0;
+}
+
+.skillbar-title span {
+	display: block;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 0 20px;
+	height:35px;
+	line-height: 35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height: 35px;
+	width: 0%;
+	border-radius: 3px;
+	transition: 500ms linear;
+	transition-property: width, background-color;
+}
+
+.skill-bar-percent {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 11px;
+	height: 35px;
+	line-height: 35px;
+	color: rgba( 0, 0, 0, 0.4 );
+	transition: color 500ms ease-out;
+}
+
+.complete .skill-bar-percent {
+	color: #fff;
+}
+
+.html5 .skillbar-title {
+	background: #d35400;
+}
+
+.html5 .skillbar-bar {
+	background: #e67e22;
+}
+
+
+.css .skillbar-title {
+	background: #2980b9;
+}
+
+.css .skillbar-bar {
+	background: #3498db;
+}
+
+.javascript .skillbar-title {
+	background: #fac552;
+}
+.javascript .skillbar-bar {
+	background: #f1ac18;
+}
+
+.jquery .skillbar-title {
+	background: #2c3e50;
+}
+
+.jquery .skillbar-bar {
+	background: #2c3e50;
+}
+
+.php .skillbar-title {
+	background: #46465e;
+}
+
+.php .skillbar-bar {
+	background: #5a68a5;
+}
+
+.wordpress .skillbar-title {
+	background: #333333;
+}
+
+.wordpress .skillbar-bar {
+	background: #525252;
+}
 
 
 
 
 
+.about-me-text{
 
-
+font-size:15px;
+}
 
 
 
