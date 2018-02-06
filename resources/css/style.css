@@ -25,7 +25,6 @@ html {
 
   background-color:#fff;
   color: #555;
-  padding: 10px 10px;
 
 }
 
@@ -46,20 +45,103 @@ body {
 
 }
 
+section{
+
+  padding:60px 0;
+}
+
+
 /*
 
+===================== re-useable  =============================
+
+*/
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color:black;
+
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 210%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+
+}
+
+h3 {
+  font-size: 120%;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+h4 {
+
+  font-size:18px;
+  margin-top:10px;
+  color:#555;
+
+}
+/*h3:after {
+  display: block;
+  height: 2px;
+  background-color: #6C006C;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+}*/
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #6C006C;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h4:after {
+  display: block;
+  height: 2px;
+  background-color: #6C006C;
+  content: " ";
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
 
 
+/*
 =====================header section=============================
-
 
 */
 
 /* =================main nav =================*/
 
 nav{
-  background-color:rgba(255, 192, 203, 0.096);
-
+  /*background-color:rgba(255, 192, 203, 0.589);*/
+  /*background-color:rgba(108, 0, 108, 0.103);*/
+  background-color:rgba(201, 201, 201, 0.103);
+  z-index:20;
+  /*border-bottom: solid 2px rgba(0, 193, 200, 0.117);*/
 }
 .main-nav {
 
@@ -75,29 +157,47 @@ nav{
 
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-  padding:16px 0;
-  color:#fff;
+li > a {
+  position: relative;
+  color: #fff;
   text-decoration: none;
+  padding:16px 0;
   text-transform:uppercase;
-  font-size:100%;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 1s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
-  border-bottom: 2px solid #6C006C;
+li > a:hover {
+  color: #fff;
+}
 
+li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6C006C;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 
 header {
+  background-color:rgba(0, 0, 0, 0.398);
   background-size:cover;
   background-position:bottom;
   height: 100vh;
   position: relative;
+
 }
 
 .bg-video {
@@ -105,13 +205,16 @@ header {
  position:absolute;
  top:0;
  left:0;
+ height:83%;
  width:100%;
  background-position:top;
  z-index: -1;
+ background-attachment: fixed;
+
 }
 .bg-video__content{
 
- height:90%;
+ height:98%;
  width:100%;
  object-fit:cover;
 
@@ -173,7 +276,7 @@ header {
   box-sizing: border-box;
   margin: 15px 15px;
   padding: 15px 20px;
-  box-shadow: inset 0 0 0 2px #6C006C;
+  box-shadow: inset 0 0 0 1.5px #6C006C;
   color: #fff;
   font-family: 'Lato';
   font-size:80%;
@@ -188,24 +291,7 @@ header {
 
 }
 
-.btn-feature{
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  margin: 10px 0;
-  padding: 5px 10px;
-  box-shadow: inset 0 0 0 2px #D4AF37;
-  color: #fff;
-  font-family: 'Lato';
-  text-transform: uppercase;
-  font-weight: 300;
-  position: relative;
-  display:inline-block;
-  text-decoration: none;
-  border-radius: 5px;
 
-
-}
 
 .btn::before,
 .btn::after{
@@ -219,7 +305,7 @@ header {
 
 
 .btn:hover{
-  color: #886f1d;
+  color: #ffffff;
 }
 .btn::before,
 .btn::after{
@@ -231,14 +317,14 @@ header {
 
 }
 .btn::before{
-  border-top: 2px solid #886f1d;
-  border-bottom: 2px solid #886f1d;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   transform: scale3d(0, 1, 1);
 }
 .btn::after
 {
-  border-left: 2px solid #886f1d;
-  border-right: 2px solid #886f1d;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: scale3d(1, 0, 1);
 }
 .btn:hover::before,
@@ -337,132 +423,48 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-h1 {
-  margin:0;
-  color:rgb(0, 0, 0);
-  font-size:2.2em;
-  text-align: center;
-  font-weight:300;
-  word-spacing:6px;
-  letter-spacing:1.3px;
-  margin-top: 110px;
-  margin-bottom:10px;
+.feature-box{
+  background-color:rgba(238, 238, 238, 0.357);
+  padding:20px 10px;
+  margin-bottom:10px 10px;
+  text-align:center;
+  border-radius: 3px;
+  transition:transform .5s;
+  box-shadow: 2px 20px 25px #8888882a;
+  border-radius: 3px;
+  border: solid 0.5px #555;
+  overflow:hidden;
 }
-*/
-
-/* button */
-
-/*
-.btn:link,
-.btn:visited {
-   display: inline-block;
-   background-color: #ffba00;
-   border:1px solid #ffb12e;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   font-weight:bold;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   letter-spacing:3px;
-   word-spacing:7px;
-   height:50px;
-   border-radius:2px;
-   -webkit-transition: background-color 0.2s, border 0.2s;
-   transition: background-color 0.2s, border 0.2s;
-   margin-top: 25px;
-   width:200px;
-   height:50px;
+.feature-box:hover {
+  transform:translateY(-10px) scale(1);
+  background-color:#fff;
+  box-shadow: 5px 20px 25px #888888f1;
+  border: solid 1.5px #6C006C;
 
 }
 
-.btn:hover {
-   display: inline-block;
-   background-color: #fa9c00;
-   border:1px solid #fa9c00;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   font-weight:bold;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   letter-spacing:3px;
-   word-spacing:7px;
-   height:50px;
-   border-radius:2px;
-   width:200px;
-   height:50px;
+.icon-basic-accelerator,
+.icon-basic-smartphone,
+.icon-basic-bolt,
+.icon-basic-lightbulb{
 
-
-}
-/* info section */
-
-
-
-
-
-
-/* feature section */
-
-
-
-/* footer */
-
-
-
-
-/* animations
-
-.js--wp-1 {
-  opacity:0;
+  font-size:50px;
+  color:#6C006C;
 }
 
-.js--wp-1.animated{
-  opacity:1;
-}
 
-.js--wp-btn {
-  opacity:0;
-}
 
-.js--wp-btn.animated{
-  opacity:1;
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
