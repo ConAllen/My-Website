@@ -38,6 +38,15 @@ body {
 
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 .row {
 
   max-width: 1140px;
@@ -49,7 +58,9 @@ section{
 
   padding:60px 0;
 }
-
+.box {
+  padding: 1%;
+}
 
 /*
 
@@ -61,7 +72,7 @@ h1,
 h2,
 h3 {
   font-weight: 400;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color:black;
 
 }
@@ -78,7 +89,7 @@ h2 {
   font-size: 210%;
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   letter-spacing: 1px;
 
 }
@@ -110,11 +121,14 @@ h4 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #6C006C;
+  background-color:#6C006C;
   content: " ";
   width: 100px;
   margin: 0 auto;
   margin-top: 20px;
+  animation-name: moveInLeft-2;
+  animation-duration:3s;
+
 }
 
 h4:after {
@@ -138,7 +152,7 @@ h4:after {
 nav{
   /*background-color:rgba(255, 192, 203, 0.589);*/
   /*background-color:rgba(108, 0, 108, 0.103);*/
-  background-color:rgba(201, 201, 201, 0.103);
+  background-color:rgba(201, 201, 201, 0.048);
   z-index:20;
   /*border-bottom: solid 2px rgba(0, 193, 200, 0.117);*/
 }
@@ -204,7 +218,7 @@ header {
  position:absolute;
  top:0;
  left:0;
- height:83%;
+ height:100%;
  width:100%;
  background-position:top;
  z-index: -1;
@@ -246,6 +260,7 @@ header {
   letter-spacing:6px;
   animation-name: moveInLeft;
   animation-duration:3s;
+  margin-bottom:20px;
 
 }
 
@@ -273,7 +288,7 @@ header {
   background: none;
   border: 0;
   box-sizing: border-box;
-  margin: 15px 15px;
+  margin: 10px 10px;
   padding: 15px 20px;
   box-shadow: inset 0 0 0 1.5px #6C006C;
   color: #fff;
@@ -334,6 +349,39 @@ header {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+
+/*
+
+============== Header Annimation  =================
+
+
+*/
+
+@keyframes moveInLeft-2 {
+
+  0% {
+
+    opacity: 0;
+    transform: translateX(-500px);
+
+  }
+
+  80% {
+    transform: translateX(10px);
+
+
+  }
+
+  100% {
+
+    opacity: 1;
+    transform: translateX(0);
+
+
+  }
+
 }
 
 
@@ -422,10 +470,17 @@ header {
 }
 
 
+/*
+
+============== about me section  =================
+
+
+*/
+
 .feature-box{
   background-color:rgba(238, 238, 238, 0.357);
   padding:20px 10px;
-  margin-bottom:50px;
+  margin-bottom:30px;
   text-align:center;
   border-radius: 3px;
   transition:transform .5s;
@@ -453,14 +508,21 @@ header {
 
 
 
+/*
+
+============== Skill bar  =================
+
+
+*/
 
 .skillbar {
 	position:relative;
 	margin-top: 10px;
 	width: 100%;
 	background: #eee;
-	height: 35px;
-	border-radius: 3px;
+	height: 40px;
+  border-radius: 3px;
+
 }
 
 .skillbar-title {
@@ -480,14 +542,14 @@ header {
 	display: block;
 	background: rgba(0, 0, 0, 0.1);
 	padding: 0 20px;
-	height:35px;
+	height: 40px;
 	line-height: 35px;
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;
 }
 
 .skillbar-bar {
-	height: 35px;
+	height: 40px;
 	width: 0%;
 	border-radius: 3px;
 	transition: 500ms linear;
@@ -499,7 +561,7 @@ header {
 	right: 10px;
 	top: 0;
 	font-size: 11px;
-	height: 35px;
+	height: 30px;
 	line-height: 35px;
 	color: rgba( 0, 0, 0, 0.4 );
 	transition: color 500ms ease-out;
@@ -558,16 +620,144 @@ header {
 }
 
 
-
+.about-me{
+  background-color:rgb(255, 255, 255);
+}
 
 
 .about-me-text{
 
 font-size:15px;
+margin-left:0px;
+margin-top:5px;
+line-height: 22px;
+
+}
+
+.purple-text{
+
+  color:#00c3c8;
+  font-size:100%;
+  font-weight:400;
+  text-decoration:none;
+
+}
+
+
+.email-link{
+
+  text-decoration:none;
+  font-weight:400;
+  color:#00c3c8;
+
+}
+
+
+/*
+
+============== Portfolio section  =================
+
+
+*/
+
+
+
+
+.portfolio-section{
+  background-color:#eeeeee;
+}
+
+
+
+.portfolio-photo{
+  width:100%;
+  margin:0px;
+  list-style:none;
+  position: relative;
+
+}
+
+.image{
+  display: block;
+  opacity:1;
+  width:100%;
+  height:auto;
+  border:solid 2px rgb(236, 236, 236);
+  border-radius: 6px;
+  transition: .5s ease;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
 
 
 
+.portfolio-photo:hover .image {
+  opacity: 0.3;
+}
 
+.portfolio-photo:hover .middle  {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
+.portfolio-photo img:hover{
+  width:100%;
+  height:auto;
+  border-radius: 6px;
+  background-color: #00c3c8;
+}
+
+.port-box-text{
+  margin-bottom:20px;
+  text-align: center;
+}
+
+.portfolio-box{
+  border:solid 2px rgb(255, 255, 255);
+  border-radius: 6px;
+  margin-bottom:1000px;
+  transition:transform .5s;
+
+}
+
+.portfolio-box:hover{
+  border:solid 2px rgb(255, 255, 255);
+  border-radius: 6px;
+  margin-bottom:10px;
+
+}
+
+
+
+
+.portfolio-box:hover {
+  transform:translateY(-10px) scale(1);
+  background-color:#fff;
+  box-shadow: 5px 20px 25px #888888f1;
+  border: solid 1.5px #6C006C;
+
+}
+
+.portfolio-link{
+  text-decoration: none;
+}
