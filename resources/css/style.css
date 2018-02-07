@@ -693,29 +693,50 @@ line-height: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  background: none;
+
+}
+
+.launch-btn {
+  border:solid 2px #00c3c8;
+  color: #000;
+  font-size: 15px;
+  padding: 15px 10px;
+  font-weight: 400;
+  text-transform:uppercase;
+  transition: .5s ease;
+  border-radius:4px;
+  text-align: center;
+  margin-left:25px;
+}
+
+
+.launch-btn:hover {
+  color: #fff;
+  background-color:#00c3c8;
+  font-size: 15px;
+  padding: 15px 18px;
+  font-weight: 400;
+  text-transform:uppercase;
+  transition: .5s ease;
+  border-radius:4px;
+  text-align: center;
+
 }
 
 
 
-
-
 .portfolio-photo:hover .image {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .portfolio-photo:hover .middle  {
   opacity: 1;
 }
 
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
 
 
 
@@ -735,7 +756,7 @@ line-height: 22px;
 .portfolio-box{
   border:solid 2px rgb(255, 255, 255);
   border-radius: 6px;
-  margin-bottom:1000px;
+  margin-bottom:10px;
   transition:transform .5s;
 
 }
@@ -760,4 +781,8 @@ line-height: 22px;
 
 .portfolio-link{
   text-decoration: none;
+}
+
+.right-align{
+  text-align: right;
 }
