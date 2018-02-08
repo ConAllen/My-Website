@@ -322,7 +322,7 @@ xtype
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   height: 90%;
-  width: 1px;
+  width: 2px;
   background-color: #00c1c8;
 }
 .cd-headline.type .cd-words-wrapper.waiting::after {
