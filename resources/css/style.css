@@ -80,7 +80,7 @@ h3 {
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 240%;
+  font-size: 400px;
   word-spacing: 4px;
   letter-spacing: 1px;
 }
@@ -107,6 +107,15 @@ h4 {
   margin-top:10px;
   color:#555;
 
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  color:#fff;
 }
 /*h3:after {
   display: block;
@@ -244,6 +253,9 @@ header {
 
 }
 
+
+
+
 .heading-primary{
 
   color:#fff;
@@ -252,26 +264,34 @@ header {
 
 }
 
-.heading-primary-main{
-  display: block;
+.new-heading{
+  display: inline-block;
   font-size:35px;
   font-weight: 400;
   text-align: center;
   letter-spacing:6px;
   animation-name: moveInLeft;
   animation-duration:3s;
-  margin-bottom:20px;
+  margin-bottom:0px;
+  text-transform:uppercase;
+  margin-top: 60px;
+  margin-bottom:40px;
+
+
 
 }
 
+
 .heading-primary-sub{
   display: block;
-  font-size:15px;
-  font-weight: 400;
+  font-size:20px;
+  font-weight: 300;
   text-align: center;
   letter-spacing:.5px;
   animation-name: moveInright;
   animation-duration:3s;
+  margin:0;
+
 }
 
 .main-nav{
@@ -467,6 +487,7 @@ header {
   animation: moveInBottom 1.2s ease-out 1.2s;
   animation-fill-mode:backwards;
 
+
 }
 
 
@@ -496,6 +517,12 @@ header {
   border: solid 1.5px #6C006C;
 
 }
+
+.icon-basic-mouse{
+  font-size:50px;
+  color:#fff;
+}
+
 
 .icon-basic-accelerator,
 .icon-basic-smartphone,
@@ -691,7 +718,7 @@ line-height: 22px;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-55%, -50%);
   -ms-transform: translate(-50%, -50%);

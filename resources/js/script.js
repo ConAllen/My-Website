@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 /*
 animations on scroll
-*/
+
 
 $('.js--wp-1').waypoint(function(direction) {
       $('.js--wp-1').addClass('animated pulse');
@@ -16,6 +16,8 @@ $('.js--wp-1').waypoint(function(direction) {
   }, {
     offset: '100%'
 });
+
+*/
 
 $(function() {
 
@@ -42,6 +44,18 @@ $(function() {
 	timer = setTimeout( action, 500 );
 
 });
+
+  window.ityped.init(document.querySelector(".ityped"),{
+
+	strings: ['Jr. Front-end developer', 'Web Designer & App Developer'],
+	shuffle: false,
+    typeSpeed: 250,
+    backSpeed: 50,
+    backDelay: 1000,
+    showCursor: false,
+    loop: true
+})
+
 
 
 });
