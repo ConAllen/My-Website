@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+
     <link rel="stylesheet" type="text/css" href="vendors/css/style.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/reset.css">
 
@@ -36,9 +38,9 @@
       <nav>
       <div class="row">
           <ul class="main-nav">
-            <li><a href="#about-us">About Me</a></li>
-            <li><a href="#services">Portfolio</a></li>
-            <li><a href="#contact-us">Contact Me</a></li>
+            <li class="nav-li"><a href="#about-us">About Me</a></li>
+            <li class="nav-li"><a href="#services">Portfolio</a></li>
+            <li class="nav-li"><a href="#contact-us">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -248,28 +250,84 @@ In the mean-time I am industrious keeping up with personal projects and upskilli
       </div>
    </section>
 
+
+
    <section class="contact-section">
+
       <div class="row">
-          <h2>
-            Want to work together?
+          <h2 class="form-h2">
+            Contact Me
           </h2>
         </div>
-        <div class="form-button">
+        <div class="row">
+            <h3 class="form-h3">
+              Have a question or want to work together?
+            </h3>
+          </div>
+    <section class="form-body">
+        <form>
+          <div class="row">
+              <div class="field name-box">
+                  <input type="text" id="name" placeholder="Who Are You?" required/>
+                  <label for="name">Name</label>
+                  <span class="ss-icon">check</span>
+              </div>
 
-        </div>
+              <div class="field email-box">
+                  <input type="text" id="email" placeholder="name@email.com" required/>
+                  <label for="email">Email</label>
+                  <span class="ss-icon">check</span>
+              </div>
 
-
-
-
+              <div class="field msg-box">
+                  <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                  <label for="msg">Msg</label>
+                  <span class="ss-icon">check</span>
+              </div>
+              <input class="button" type="submit" value="Send"/>
+          </div>
+      </form>
+  </section>
      </section>
+
 
   <!--features section  -->
 
 <!--footer section  -->
-<footer class="footer-section">
-
-
-</footer>
+ <footer>
+            <!--<div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>-->
+                <div class="row">
+                    <ul class="social-links">
+                      <div class="square">
+                          <li class="footer-li"><a href="https://github.com/ConAllen/"><i class="ion-social-github"></i></a></li>
+                      </div>
+                      <div class="square">
+                          <li class="footer-li"><a href="https://www.linkedin.com/in/con-allen-dublin/"><i class="ion-social-linkedin"></i></a></li>
+                      </div>
+                      <div class="square">
+                          <li class="footer-li"><a href="https://plus.google.com/u/0/+ConAllenFront-endDeveloper"><i class="ion-social-googleplus"></i></a></li>
+                      </div>
+                      <div class="square">
+                          <li class="footer-li"><a href="https://www.pinterest.ie/allenconallen46/"><i class="ion-social-pinterest"></i></a></li>
+                      </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Made by Con Allen 2018 &copy;
+                </p>
+            </div>
+        </footer>
 
 <!--JS Links section  -->
 
