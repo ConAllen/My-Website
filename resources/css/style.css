@@ -121,7 +121,7 @@ h3 {
 
 h4 {
 
-  font-size:18px;
+  font-size:110%;
   margin-top:10px;
   color:#555;
 
@@ -181,6 +181,7 @@ nav{
   /*background-color:rgba(108, 0, 108, 0.103);*/
   background-color:rgba(201, 201, 201, 0.048);
   z-index:20;
+  max-width:100%;
   /*border-bottom: solid 2px rgba(0, 193, 200, 0.117);*/
 }
 .main-nav {
@@ -188,6 +189,7 @@ nav{
   float:right;
   list-style:none;
   margin:25px;
+
 }
 
 
@@ -236,7 +238,10 @@ header {
   background-size:cover;
   background-position:bottom;
   height: 100vh;
+  width:100%;
   position: relative;
+
+
 
 }
 
@@ -518,7 +523,7 @@ header {
 
 */
 
-.feature-box{
+.feature-box-fast{
   background-color:rgba(238, 238, 238, 0.357);
   padding:20px 10px;
   margin-bottom:30px;
@@ -530,7 +535,7 @@ header {
   border: solid 0.5px #555;
   overflow:hidden;
 }
-.feature-box:hover {
+.feature-box-fast:hover {
   transform:translateY(-10px) scale(1);
   background-color:#fff;
   box-shadow: 5px 20px 25px #888888f1;
@@ -538,6 +543,65 @@ header {
 
 }
 
+.feature-box-responsive{
+  background-color:rgba(238, 238, 238, 0.357);
+  padding:20px 10px;
+  margin-bottom:30px;
+  text-align:center;
+  border-radius: 3px;
+  transition:transform .5s;
+  box-shadow: 2px 20px 25px #8888882a;
+  border-radius: 3px;
+  border: solid 0.5px #555;
+  overflow:hidden;
+}
+.feature-box-responsive:hover {
+  transform:translateY(-10px) scale(1);
+  background-color:#fff;
+  box-shadow: 5px 20px 25px #888888f1;
+  border: solid 1.5px #6C006C;
+
+
+}
+.feature-box-intuative{
+  background-color:rgba(238, 238, 238, 0.357);
+  padding:20px 10px;
+  margin-bottom:30px;
+  text-align:center;
+  border-radius: 3px;
+  transition:transform .5s;
+  box-shadow: 2px 20px 25px #8888882a;
+  border-radius: 3px;
+  border: solid 0.5px #555;
+  overflow:hidden;
+}
+.feature-box-intuative:hover {
+  transform:translateY(-10px) scale(1);
+  background-color:#fff;
+  box-shadow: 5px 20px 25px #888888f1;
+  border: solid 1.5px #6C006C;
+
+}
+
+.feature-box-dynamic{
+  background-color:rgba(238, 238, 238, 0.357);
+  padding:20px 10px;
+  margin-bottom:30px;
+  text-align:center;
+  border-radius: 3px;
+  transition:transform .5s;
+  box-shadow: 2px 20px 25px #8888882a;
+  border-radius: 3px;
+  border: solid 0.5px #555;
+  overflow:hidden;
+}
+.feature-box-dynamic:hover {
+  transform:translateY(-10px) scale(1);
+  background-color:#fff;
+  box-shadow: 5px 20px 25px #888888f1;
+  border: solid 1.5px #6C006C;
+
+}
 .icon-basic-mouse{
   font-size:50px;
   color:#fff;
@@ -551,6 +615,10 @@ header {
 
   font-size:50px;
   color:#6C006C;
+}
+
+.feature-box-text{
+  margin-bottom:20px;
 }
 
 
@@ -674,10 +742,10 @@ header {
 
 .about-me-text{
 
-font-size:15px;
+font-size:16px;
 margin-left:0px;
 margin-top:5px;
-line-height: 22px;
+line-height: 25px;
 
 }
 
@@ -733,6 +801,7 @@ line-height: 22px;
   border-radius: 6px;
   transition: .5s ease;
 }
+
 
 .middle {
   transition: .5s ease;
@@ -853,7 +922,7 @@ line-height: 22px;
   padding: 60px 0 110px;
   width: 800%;
   max-width: 1100px;
-  font-size:10px;
+  font-size: 16px;
   background-color: #252A33;
 
 }
@@ -880,6 +949,8 @@ form .field {
 }
 form .field label {
   text-transform: uppercase;
+  font-size: 16px;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -904,7 +975,7 @@ form .field label + span {
   top: 50px;
   left: 7%;
   width:400px;
-  font-size: 2.5em;
+  font-size: 16px;
   text-shadow: 1px 2px 0 #00c3c8;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -930,6 +1001,7 @@ form .field textarea {
 form .field input[type="text"]#msg,
 form .field textarea#msg {
   height: 68px;
+  width:100%;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
   -o-transition: all 333ms ease-in-out;
@@ -971,7 +1043,7 @@ form input[type="submit"] {
   text-transform: uppercase;
   position: relative;
   padding: 13px 50px;
-  font-size: 1.4em;
+  font-size: 16px;
   border-radius: 4px;
   margin-top:15px;
   letter-spacing: 0.1em;
@@ -1104,12 +1176,6 @@ footer {
   transition: color 0.2s;
 }
 
-#square{
-
-  width: 200px;
-	height: 200px;
-	background:#252B32;
-}
 
 .ion-social-github:hover {
   color: #e0e0e0;
