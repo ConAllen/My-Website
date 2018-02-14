@@ -21,7 +21,7 @@ $('.js--wp-3').waypoint(function(direction) {
   offset: '50%'
 });
 $('.js--wp-4').waypoint(function(direction) {
-    $('.js--wp-4').addClass('animated slideInUp');
+    $('.js--wp-4').addClass('animated pulse');
 }, {
   offset: '40%'
 });
@@ -42,7 +42,16 @@ $('.js--wp-7').waypoint(function(direction) {
   offset: '40%'
 });
 
-
+$('.js--wp-8').waypoint(function(direction) {
+    $('.js--wp-8').addClass('animated fadeInLeft');
+}, {
+  offset: '50%'
+});
+$('.js--wp-9').waypoint(function(direction) {
+    $('.js--wp-9').addClass('animated shake');
+}, {
+  offset: '100%'
+});
 
 $(function() {
 
