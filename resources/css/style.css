@@ -179,17 +179,18 @@ h4:after {
 nav{
   /*background-color:rgba(255, 192, 203, 0.589);*/
   /*background-color:rgba(108, 0, 108, 0.103);*/
-  background-color:rgba(201, 201, 201, 0.048);
+  background-color:rgba(201, 201, 201, 0);
   z-index:20;
   max-width:100%;
   /*border-bottom: solid 2px rgba(0, 193, 200, 0.117);*/
+  box-shadow: 0 2px 2px #00c1c800;
+
 }
 .main-nav {
 
   float:right;
   list-style:none;
   margin:25px;
-
 }
 
 
@@ -231,6 +232,73 @@ nav{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.sticky{
+
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:rgba(255, 255, 255, 0.849);
+  z-index: 3000;
+  box-shadow: 0 2px 2px #00c1c8c0;
+  }
+
+  .sticky .main-nav {
+
+    float:right;
+    list-style:none;
+    margin:25px;
+
+  }
+
+
+  .sticky .main-nav li {
+    margin-left:40px;
+    display:inline-block;
+
+
+
+  }
+
+  .sticky .nav-li > a {
+    position: relative;
+    color: #555;
+    text-decoration: none;
+    padding:16px 0;
+    text-transform:uppercase;
+  }
+
+  .sticky .nav-li > a:hover {
+    color: #555;
+  }
+
+  .mobile-icon-link{
+    float:right;
+    margin-top:30px;
+    cursor: pointer;
+    display:none;
+    font-size: 200%;
+    color:#fff;
+    margin-bottom:20px;
+  }
+
+  .mobile-icon-link i{
+    color: #fff;
+    margin-bottom:10px;
+  }
+  .sticky .mobile-icon-link i{
+    /*color: #D49B17;*/
+    color: #6C006C;
+
+    margin-bottom:10px;
+  }
+  .sticky .mobile-icon-link{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+
 
 
 header {
@@ -319,7 +387,7 @@ header {
 
 }
 
-.main-nav{
+.sticky .main-nav{
 }
 
 /*

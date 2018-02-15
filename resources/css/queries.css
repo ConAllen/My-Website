@@ -53,8 +53,8 @@
 
 @media only screen and (max-width:1023px){
 
-  .row,
-  .text-box { padding: 0 4%; }
+    .row,
+    .text-box { padding: 0 4%; }
 
 
     .text-box {
@@ -65,32 +65,32 @@
         font-size:25px;
       }
 
-      .new-heading{
+    .new-heading{
         font-size:22px;
       }
 
 
-      .heading-primary-sub{
+    .heading-primary-sub{
         font-size:20px;
       }
 
-      .main-nav{
+    .main-nav{
         font-size:13px;
       }
 
-      .bg-video__content{
+    .bg-video__content{
         height:100%;
        }
 
-       .btn{
+    .btn{
         margin: 10px 10px;
         padding: 12px 15px;
         box-shadow: inset 0 0 0 1.5px #6C006C;
         font-size:100%;
       }
 
-      .feature-box-dynamic,
-      .feature-box-fast{
+    .feature-box-dynamic,
+    .feature-box-fast{
 
         padding:20px 15px;
         font-size:100%;
@@ -98,7 +98,7 @@
 
       }
 
-      .feature-box-fast:hover{
+    .feature-box-fast:hover{
 
         padding:20px 15px;
         font-size:100%;
@@ -106,79 +106,81 @@
 
       }
 
-      .feature-box-text{
+    .feature-box-text{
         font-size:13px;
         padding:10px 0px;
         text-align: center;
 
+    }
+
+
+    .launch-btn {
+
+      font-size: 13px;
+      padding: 12px 17px;
+
+    }
+
+
+    .launch-btn:hover {
+
+      font-size: 13px;
+      padding: 12px 20px;
+
+
+    }
+    .image{
+        width:100%;
+        height:auto;
+    }
+
+
+    .form-body {
+
+
+        width: 100%;
+        max-width: 1100px;
+        font-size: 13px;
+
+      }
+
+    .form-body {
+        margin-bottom: 0px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: 100;
+        max-width: 1140px;
+        margin: 0 auto;
+        color:#fff;
   }
 
+      form .field input[type="text"],
+      form .field textarea {
 
-  .launch-btn {
+      width:430px;
 
-    font-size: 13px;
-    padding: 12px 17px;
+    }
 
-  }
+      form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+      form .field textarea:focus#msg,
+      form .field textarea.focused#msg {
+        padding-bottom: 150px;
+      }
 
+      form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+      form .field textarea:focus + label,
+      form .field textarea.focused + label {
+        width: 18%;
+        background: #00c3c8;
+        color: #313A3D;
+      }
 
-  .launch-btn:hover {
-
-    font-size: 13px;
-    padding: 12px 20px;
-
-
-  }
-.image{
-    width:100%;
-    height:auto;
-}
-
-
-.form-body {
-
-
-    width: 100%;
-    max-width: 1100px;
-    font-size: 13px;
-
-  }
-  .form-body {
-    margin-bottom: 0px;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    max-width: 1140px;
-    margin: 0 auto;
-    color:#fff;
-  }
-
-  form .field input[type="text"],
-form .field textarea {
-
-  width:430px;
-
-}
-
-form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
-form .field textarea:focus#msg,
-form .field textarea.focused#msg {
-  padding-bottom: 150px;
-}
-form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
-form .field textarea:focus + label,
-form .field textarea.focused + label {
-  width: 18%;
-  background: #00c3c8;
-  color: #313A3D;
-}
-
-form .field:hover label {
-  width: 18%;
-  background: #6C006C;
-  color: white;
-}
+      form .field:hover label {
+        width: 18%;
+        background: #6C006C;
+        color: white;
+      }
 
 
 
@@ -231,42 +233,42 @@ form .field:hover label {
 
     }
 
-    .skillbar-bar {
-        height: 35px;
-        width: 0%;
+      .skillbar-bar {
+          height: 35px;
+          width: 0%;
 
-    }
-
-    .skill-bar-percent {
-        right: 10px;
-        font-size: 11px;
-        height: 35px;
-        line-height: 35px;
-
-    }
-
-    .portfolio-box{
-        font-size:13px;
       }
 
-      .Fast{
-          margin-bottom:10px;
-      }
-      .image{
-          margin-bottom:10px;
-      }
+      .skill-bar-percent {
+          right: 10px;
+          font-size: 11px;
+          height: 35px;
+          line-height: 35px;
 
-      .square{
-
-        margin-left:-35px;
-        margin-right:40px;
       }
 
-      .square:hover{
+      .portfolio-box{
+          font-size:13px;
+        }
 
-        margin-left:-35px;
-        margin-right:40px;
-      }
+        .Fast{
+            margin-bottom:10px;
+        }
+        .image{
+            margin-bottom:10px;
+        }
+
+        .square{
+
+          margin-left:-35px;
+          margin-right:40px;
+        }
+
+        .square:hover{
+
+          margin-left:-35px;
+          margin-right:40px;
+        }
 
 
 
@@ -278,17 +280,18 @@ form .field:hover label {
 
 @media only screen and (max-width:767px){
 
-  .row,
-  .hero-text-box { padding: 0 4%; }
-  .col {
-      width: 100%;
-      margin: 0 0 4% 0;
-  }
-  html,
-  body{
-    width:100%;
-    overflow-x:hidden;
-  }
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    html,
+    body{
+      width:100%;
+      overflow-x:hidden;
+    }
 
     .text-box {
         font-size:13px;
@@ -317,12 +320,12 @@ form .field:hover label {
           height: auto;
         }
 
-       .btn{
-        margin: 10px 10px;
-        padding: 12px 15px;
-        box-shadow: inset 0 0 0 1.5px #6C006C;
-        font-size:13px;
-      }
+      .btn{
+      margin: 10px 10px;
+      padding: 12px 15px;
+      box-shadow: inset 0 0 0 1.5px #6C006C;
+      font-size:13px;
+    }
 
       header {
         background-color:rgba(0, 0, 0, 0.398);
@@ -335,55 +338,55 @@ form .field:hover label {
       }
 
 
-.bg-video {
+    .bg-video {
 
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:auto;
-    background-position:top;
-    z-index: -1;
-    background-attachment: fixed;
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:auto;
+        background-position:top;
+        z-index: -1;
+        background-attachment: fixed;
 
-   }
-   .bg-video__content{
+      }
+      .bg-video__content{
 
-    height:100%;
-    width:100%;
-    object-fit:cover;
-   }
+        height:100%;
+        width:100%;
+        object-fit:cover;
+      }
 
-   .feature-box-text{
-    font-size:13px;
-    padding:10px 0px;
-    text-align: center;
+      .feature-box-text{
+        font-size:13px;
+        padding:10px 0px;
+        text-align: center;
 
-}
-.about-me-text{
+          }
+      .about-me-text{
 
-  font-size:13px;
-  line-height: 21px;
-}
+        font-size:13px;
+        line-height: 21px;
+      }
 
-form .field input[type="text"],
-form .field textarea {
+      form .field input[type="text"],
+      form .field textarea {
 
-  width:250px;
+        width:250px;
 
-}
+      }
 
-.square{
+      .square{
 
-  margin-left:-60px;
-  margin-right:65px;
-}
+        margin-left:-60px;
+        margin-right:65px;
+      }
 
-.square:hover{
+      .square:hover{
 
-  margin-left:-60px;
-  margin-right:65px;
-}
+        margin-left:-60px;
+        margin-right:65px;
+      }
 
 
 
@@ -391,6 +394,7 @@ form .field textarea {
 
 /* small phones: from 0 to 48px  */
 @media only screen and (max-width:480px){
+
   html,
   body{
     width:100%;
@@ -403,8 +407,66 @@ form .field textarea {
       width: 100%;
       margin: 0 0 4% 0;
   }
+
   section { padding: 25px 0; }
 
+
+
+  .mobile-icon-link{
+   display:inline-block;
+  }
+
+  .main-nav{
+    float:left;
+    display: none;
+  }
+
+  .main-nav li {
+    display:block;
+    margin-top:10px;
+    margin-left:35px;
+    font-size:110%;
+
+
+
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+
+    display:block;
+    border:0;
+    padding:2px 0;
+  }
+
+  .sticky .main-nav {
+
+      float:left;
+  }
+
+
+  .sticky .main-nav li {
+    display:block;
+    margin-top:10px;
+    margin-left:35px;
+    font-size:110%;
+
+  }
+
+  .sticky .nav-li > a {
+    position: relative;
+    color: #555;
+    text-decoration: none;
+    padding:16px 0;
+    text-transform:uppercase;
+    font-weight:400;
+  }
+
+
+
+
+  .mobile-icon-link{
+    display:inline-block;
+   }
 
   .bg-video {
 
@@ -464,7 +526,7 @@ form .field textarea {
   background: #E8E9EA;
   width: 80.5%;
   margin: 0;
-  padding: 28px 0;
+  padding: 24px 0;
   padding-left: 75px;
   color: #313A3D;
   font-size: 11px;
@@ -503,4 +565,6 @@ form .field:hover label {
 
 
   }
+
+
 }

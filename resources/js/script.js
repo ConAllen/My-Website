@@ -1,6 +1,20 @@
 
 $(document).ready(function() {
 
+  /*  Sticky Nav*/
+  $('.js--about-us-section').waypoint(function(direction) {
+    if(direction == "down"){
+
+      $('nav').addClass('sticky');
+
+    } else {
+
+      $('nav').removeClass('sticky');
+    }
+
+});
+
+
 //animations on scroll
 
 
@@ -163,7 +177,25 @@ $('#hire .field:nth-child(2) input').blur(function () {
     });
 });
 
+$('.js-nav-icon').click(function(){
 
+    var nav = $('.js-main-nav');
+    var icon = $('.js-nav-icon i');
+
+    nav.slideToggle(200);
+
+    if (icon.hasClass('ion-pizza')){
+
+      icon.addClass('ion-ios-close-outline');
+      icon.removeClass('ion-pizza');
+
+    } else {
+
+      icon.addClass('ion-pizza');
+      icon.removeClass('ion-ios-close-outline');
+
+    }
+});
 
 
 
