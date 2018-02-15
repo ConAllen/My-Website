@@ -515,7 +515,7 @@
   form .field input[type="text"],
   form .field textarea {
 
-    width:210px;
+    width:100px;
 
   }
 
@@ -524,25 +524,31 @@ form .field input[type="text"],
 form .field textarea {
   border: none;
   background: #E8E9EA;
-  width: 80.5%;
   margin: 0;
-  padding: 24px 0;
-  padding-left: 75px;
+  padding: 26px 0px;
   color: #313A3D;
   font-size: 11px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  width:210px;
-
+  padding-left: 0px;
+  width:100%;
+  padding-left:75px;
 }
 form .field:hover label {
   width: 30%;
   background: #6C006C;
   color: white;
+
 }
 
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 28%;
+  background: #00c3c8;
+  color: #313A3D;
 
-
+}
 
   .square{
     margin-left:-20px;

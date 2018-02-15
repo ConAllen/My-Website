@@ -184,14 +184,14 @@ $('.js-nav-icon').click(function(){
 
     nav.slideToggle(200);
 
-    if (icon.hasClass('ion-pizza')){
+    if (icon.hasClass('ion-planet')){
 
       icon.addClass('ion-ios-close-outline');
-      icon.removeClass('ion-pizza');
+      icon.removeClass('ion-planet');
 
     } else {
 
-      icon.addClass('ion-pizza');
+      icon.addClass('ion-planet');
       icon.removeClass('ion-ios-close-outline');
 
     }
