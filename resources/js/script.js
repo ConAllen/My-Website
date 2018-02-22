@@ -66,6 +66,13 @@ $('.js--wp-9').waypoint(function(direction) {
 }, {
   offset: '100%'
 });
+$('.js--wp-10').waypoint(function(direction) {
+    $('.js--wp-10').addClass('animated pulse');
+}, {
+  offset: '50%'
+});
+
+
 
 $(function() {
 

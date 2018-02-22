@@ -53,7 +53,8 @@
             <li class="nav-li"><a href="#about-us">About Me</a></li>
             <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-li"><a href="#contact-me">Contact Me</a></li>
-            <li class="nav-li"><a href="/resume.php">Résumé</a></li>
+            <li class="nav-li"><a href="http://www.conallen.ie/resume.php">Résumé</a></li>
+
           </ul>
          <!-- <a class="mobile-icon-link js-nav-icon"><i class="ion-pizza"></i></a>-->
           <a class="mobile-icon-link js-nav-icon"><i class="ion-navicon"></i></a>
@@ -140,7 +141,7 @@
 Soon after I graduated, I was contracted as a Front-end Developer. I worked on projects for Pepsi Co. and London Underground. It was also an excellent opportunity to improve on my <span class="purple-text">UI /UX Design</span>  and Front-end Development skills. <br>
 In October 2017 I qualified for <span class="purple-text">Google’s Front-end Developer Challenge Scholarship</span> where I furthered my programming skills & knowledge of</span> JavaScript and JQuery.</span><br>
 I am currently working as <span class="purple-text">freelance Front-end Developer</span> while actively looking for a permanent Junior Front-end role.
-In the mean-time I am industrious keeping up with personal projects and upskilling in the latest technologies. Feel free to drop me an <a class="email-link" href="#">email</a> or check out my CV
+In the mean-time I am industrious keeping up with personal projects and upskilling in the latest technologies. Feel free to drop me an <a class="email-link" href="#contact-me">email</a>
 
             </p>
           </div>
@@ -264,9 +265,6 @@ In the mean-time I am industrious keeping up with personal projects and upskilli
 
       </div>
    </section>
-
-
-
 <section class="contact-section" id="contact-me">
 
     <div class="row" id="form">
@@ -333,7 +331,7 @@ In the mean-time I am industrious keeping up with personal projects and upskilli
                     </ul>
                 </div>-->
                 <div class="row">
-                    <ul class="social-links js--wp-9" id='connect'>
+                    <ul class="social-links js--wp-9">
                       <div class="square">
                           <li class="footer-li"><a href="https://github.com/ConAllen/"><i class="ion-social-github"></i></a></li>
                       </div>

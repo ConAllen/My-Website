@@ -176,6 +176,29 @@
         color: #313A3D;
       }
 
+      form .field input[type="email"],
+      form .field textarea {
+
+      width:430px;
+
+    }
+
+      form .field input[type="email"]:focus#msg, form .field input[type="email"].focused#msg,
+      form .field textarea:focus#msg,
+      form .field textarea.focused#msg {
+        padding-bottom: 150px;
+      }
+
+      form .field input[type="email"]:focus + label, form .field input[type="email"].focused + label,
+      form .field textarea:focus + label,
+      form .field textarea.focused + label {
+        width: 18%;
+        background: #00c3c8;
+        color: #313A3D;
+      }
+
+
+
       form .field:hover label {
         width: 18%;
         background: #6C006C;
@@ -376,6 +399,15 @@
 
       }
 
+
+      form .field input[type="email"],
+      form .field textarea {
+
+        width:250px;
+
+      }
+
+
       .square{
 
         margin-left:-60px;
@@ -547,6 +579,46 @@ form .field textarea.focused + label {
   width: 28%;
   background: #00c3c8;
   color: #313A3D;
+
+}
+
+
+
+form .field input[type="email"],
+form .field textarea {
+
+  width:100px;
+
+}
+
+
+form .field input[type="email"],
+form .field textarea {
+border: none;
+background: #E8E9EA;
+margin: 0;
+padding: 26px 0px;
+color: #313A3D;
+font-size: 11px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+padding-left: 0px;
+width:100%;
+padding-left:75px;
+}
+form .field:hover label {
+width: 30%;
+background: #6C006C;
+color: white;
+
+}
+
+form .field input[type="email"]:focus + label, form .field input[type="email"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+width: 28%;
+background: #00c3c8;
+color: #313A3D;
 
 }
 

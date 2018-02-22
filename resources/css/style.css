@@ -186,7 +186,9 @@ nav{
   box-shadow: 0 2px 2px #00c1c800;
 
 }
-.main-nav {
+
+.main-nav,
+.resume-main-nav {
 
   float:right;
   list-style:none;
@@ -194,12 +196,20 @@ nav{
 }
 
 
-.main-nav li {
+.main-nav li,
+.resume-main-nav li {
   margin-left:40px;
   display:inline-block;
 
 }
 
+.nav-li > a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding:16px 0;
+  text-transform:uppercase;
+}
 .nav-li > a {
   position: relative;
   color: #fff;
@@ -298,7 +308,7 @@ nav{
     margin-bottom:10px;
   }
 
-
+/**/
 
 
 header {
@@ -310,6 +320,16 @@ header {
   position: relative;
 
 
+
+}
+.header-resume {
+  background-color:#eee;
+  background-size:cover;
+  background-position:bottom;
+  height: 100vh;
+  width:100%;
+  position: relative;
+  color:rgb(3, 2, 2);
 
 }
 
@@ -329,7 +349,7 @@ header {
 }
 .bg-video__content{
 
- height:98%;
+ height:100%;
  width:100%;
  object-fit:cover;
 
@@ -689,6 +709,9 @@ header {
   margin-bottom:20px;
 }
 
+.cv{
+  height:1200px;
+}
 
 
 /*
@@ -755,51 +778,51 @@ header {
 }
 
 .html5 .skillbar-title {
-	background: #d35400;
+	background: #38003835;
 }
 
 .html5 .skillbar-bar {
-	background: #e67e22;
+	background: #6C006C;
 }
 
 
 .css .skillbar-title {
-	background: #2980b9;
+	background: #38003835;
 }
 
 .css .skillbar-bar {
-	background: #3498db;
+	background: #6C006C;
 }
 
 .javascript .skillbar-title {
-	background: #fac552;
+	background: #38003835;
 }
 .javascript .skillbar-bar {
-	background: #f1ac18;
+	background: #6C006C;
 }
 
 .jquery .skillbar-title {
-	background: #2c3e50;
+	background: #38003835;
 }
 
 .jquery .skillbar-bar {
-	background: #2c3e50;
+	background: #6C006C;
 }
 
 .php .skillbar-title {
-	background: #46465e;
+	background: #38003835;
 }
 
 .php .skillbar-bar {
-	background: #5a68a5;
+	background: #6C006C;
 }
 
 .wordpress .skillbar-title {
-	background: #333333;
+	background: #38003835;
 }
 
 .wordpress .skillbar-bar {
-	background: #525252;
+	background: #6C006C;
 }
 
 
@@ -942,7 +965,7 @@ line-height: 25px;
   border-radius: 6px;
   margin-bottom:10px;
   transition:transform .5s;
-  background-color:rgba(238, 238, 238, 0.528);
+  background-color:rgb(238, 238, 238);
 }
 
 .portfolio-box:hover{
@@ -1066,8 +1089,8 @@ form .field textarea {
   width:645px;
 
 }
-form .field input[type="text"]#msg,
-form .field textarea#msg {
+form .field input[type="text"]#message,
+form .field textarea#message {
   height: 68px;
   width:100%;
   -webkit-transition: all 333ms ease-in-out;
@@ -1081,9 +1104,9 @@ form .field textarea:focus,
 form .field textarea.focused {
   outline: none;
 }
-form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
-form .field textarea:focus#msg,
-form .field textarea.focused#msg {
+form .field input[type="text"]:focus#message, form .field input[type="text"].focused#message,
+form .field textarea:focus#message,
+form .field textarea.focused#message {
   padding-bottom: 150px;
 }
 form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
@@ -1097,6 +1120,57 @@ form .field input[type="text"].focused + label,
 form .field textarea.focused + label {
   color: #00c3c8;
 }
+
+
+
+form .field input[type="email"],
+form .field textarea {
+  border: none;
+  background: #E8E9EA;
+  width: 80.5%;
+  margin: 0;
+  padding: 24px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width:645px;
+
+}
+form .field input[type="email"]#message,
+form .field textarea#message {
+  height: 68px;
+  width:100%;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="email"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+form .field input[type="email"]:focus#message, form .field input[type="text"].focused#message,
+form .field textarea:focus#message,
+form .field textarea.focused#message {
+  padding-bottom: 150px;
+}
+form .field input[type="email"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #00c3c8;
+  color: #313A3D;
+}
+form .field input[type="email"].focused + label,
+form .field textarea.focused + label {
+  color: #00c3c8;
+}
+
+
 form .field:hover label {
   width: 18%;
   background: #6C006C;
@@ -1268,3 +1342,19 @@ footer p {
   margin-top: 20px;
 }
 
+.form-messages{
+  width: 70%;
+  margin:0 auto;
+  padding:10px;
+  border-radius:3px;
+  margin-bottom:50px;
+
+}
+
+.success {
+  background-color: green;
+}
+
+.error{
+  background-color: rgba(236, 30, 30, 0.747);
+}
